@@ -1,0 +1,39 @@
+from random import randint
+
+list_enemies = []  # Lista de inimigos do RPG
+
+def create_enemies():
+    level = randint(0, 100)
+
+    new_enemies = {
+        "Name": f"Enemies // {level}",
+        "Level": level,  
+        "HP": level * 5,
+        "Strength": level * 4,
+        "Defense": level * 3,
+        "XP": level * 7,
+    }
+    list_enemies.append(new_enemies)
+
+def spawn_enemies(spawn):
+    for x in range(spawn):
+        create_enemies()
+
+spawn_enemies(1)
+
+for enemies in list_enemies:
+    print(f"Name:{enemies['Name']} // Level:{enemies['Level']} // Strength:{enemies['Strength']} // Defense: {enemies['Defense']} // XP {enemies['XP']}")
+
+def main_character():
+    level = int(input("Digite o level do seu personagem: \n"))
+    character = {
+        "Name": input("Digite o nome do seu personagem: \n"),
+        "Classe": input("Digite a classe do seu personagem: \n"),
+        "Strength": 3 * level,
+        "HP": 4 * level
+    }
+    return character
+
+character = main_character()
+
+print(f"Olá {character['Name']} seja bem vindo!")
