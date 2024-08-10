@@ -1,0 +1,1 @@
+Olá! Me chamo Murilo Barbosa Novaes, sou estudante de Ciência da computação e esse foi o meu primeiro projeto pessoal e sozinho usando Python. Nele busquei criar um conceito simples de um inicio de RPG, para aperfeiçoar meus conhecimentos e praticas usando a sintaxe de Python
